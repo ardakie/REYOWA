@@ -343,7 +343,7 @@ export function App() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6 border-t-[16px] border-reyowa-green">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
           <div className="w-32">
             <img 
                src="/logo.png" 
@@ -351,8 +351,12 @@ export function App() {
                className="w-full h-auto brightness-125 saturate-150"
              />
           </div>
-          <div className="text-sm text-gray-400 uppercase font-bold tracking-widest text-center md:text-right">
-            Tersane İstanbul • Sürdürülebilir Tasarım Alanı
+          <div className="w-48">
+            <img 
+               src="/atersist.png" 
+               alt="Tersane İstanbul" 
+               className="w-full h-auto"
+             />
           </div>
         </div>
       </footer>
