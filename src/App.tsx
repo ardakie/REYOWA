@@ -213,8 +213,15 @@ export function App() {
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase">Üretim</h3>
                 <p className="text-lg text-gray-300 font-medium leading-relaxed">
-                  Her tasarımcı belirli bir tipolojiye (Sandalye, Masa, Tabure, Şezlong veya Saksı) odaklanarak kendi özgün formunu yaratacaktır.
+                  Her tasarımcı belirli bir tipolojiye odaklanarak kendi özgün formunu yaratacaktır.
                 </p>
+                <ul className="text-lg text-gray-300 font-medium leading-relaxed mt-4 space-y-2">
+                  <li>• Sandalye</li>
+                  <li>• Masa</li>
+                  <li>• Tabure</li>
+                  <li>• Şezlong</li>
+                  <li>• Saksı</li>
+                </ul>
               </div>
             </motion.div>
 
