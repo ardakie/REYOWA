@@ -29,6 +29,7 @@ const textReveal: any = {
 
 export function App() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const colorScrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -39,6 +40,18 @@ export function App() {
   const scrollRight = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({ left: 400, behavior: 'smooth' });
+    }
+  };
+
+  const colorScrollLeft = () => {
+    if (colorScrollContainerRef.current) {
+      colorScrollContainerRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+    }
+  };
+
+  const colorScrollRight = () => {
+    if (colorScrollContainerRef.current) {
+      colorScrollContainerRef.current.scrollBy({ left: 400, behavior: 'smooth' });
     }
   };
 
@@ -53,16 +66,16 @@ export function App() {
         <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-reyowa-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-reyowa-green/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <header className="flex justify-between items-start z-10 w-full">
-          <div className="w-32 md:w-40">
+        <header className="flex justify-center items-start z-10 w-full relative">
+          <div className="absolute left-0 w-32 md:w-40">
             <img 
                src="/logo.png" 
                alt="REYOWA Logo" 
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
-          <div className="text-right max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
-            Oakberry X Reyowa <br /> | Tersane Koleksiyonu
+          <div className="text-center max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
+            Oakberry X Reyowa <br /> — Tersane Koleksiyonu
           </div>
         </header>
 
@@ -277,6 +290,68 @@ export function App() {
         </div>
       </section>
 
+      {/* Materyal ve Renk Örnekleri Section */}
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-reyowa-grey relative z-20">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-12"
+          >
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-center">
+              MATERYAL VE RENK ÖRNEKLERİ
+            </h2>
+          </motion.div>
+
+          <div className="relative mb-12">
+            <button onClick={colorScrollLeft} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors hidden md:block">
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            
+            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto scroll-smooth pb-4 px-0 md:px-12 hide-scrollbar snap-x snap-mandatory">
+              {[
+                { src: '/assets/color1.jpg', name: 'Gri' },
+                { src: '/assets/color2.jpg', name: 'Kahve' },
+                { src: '/assets/color3.jpg', name: 'Yeşil' }
+              ].map((color, i) => (
+                <div key={i} className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] snap-center">
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src={color.src} 
+                      alt={color.name} 
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <button onClick={colorScrollRight} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors hidden md:block">
+              <ChevronRight className="w-6 h-6" />
+            </button>
+          </div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="flex justify-center"
+          >
+            <a
+              href="/reyowa-granule-recipe.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-reyowa-green transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
+              Tüm Renk Seçenekleri
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Örnek Çalışmalar Section */}
       <section className="py-16 md:py-24 px-6 md:px-12 bg-white relative z-20">
         <div className="max-w-7xl mx-auto">
@@ -316,23 +391,6 @@ export function App() {
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="flex justify-center mt-12"
-          >
-            <a
-              href="/reyowa-granule-recipe.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-reyowa-green transition-colors duration-300 shadow-lg hover:shadow-xl"
-            >
-              Materyal Örnekleri ve Renkler
-            </a>
-          </motion.div>
         </div>
       </section>
 
