@@ -66,20 +66,20 @@ export function App() {
         <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-reyowa-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-reyowa-green/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <header className="flex justify-center items-center z-10 w-full relative">
-          <div className="absolute left-0 w-32 md:w-40">
+        <header className="flex justify-between items-start z-10 w-full relative">
+          <div className="w-32 md:w-40">
             <img 
                src="/logo.png" 
                alt="REYOWA Logo" 
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
-          <div className="text-center max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
+          <div className="text-right max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
             Oakberry X Reyowa <br /> — Tersane Koleksiyonu
           </div>
         </header>
 
-        <main className="z-10 flex flex-col mt-auto mb-20 md:mb-12">
+        <main className="z-10 flex-1 flex flex-col justify-center items-center">
           <motion.div
             initial="hidden"
             animate="visible"
