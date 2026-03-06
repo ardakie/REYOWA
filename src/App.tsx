@@ -62,6 +62,15 @@ export function App() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-between p-6 md:p-12 overflow-hidden">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 opacity-[0.40]">
+          <img 
+            src="/hero-background.jpg" 
+            alt="Hero Background" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
         {/* Animated Background blobs */}
         <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-reyowa-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-reyowa-green/10 rounded-full blur-[100px] pointer-events-none"></div>
