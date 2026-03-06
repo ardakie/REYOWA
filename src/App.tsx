@@ -319,14 +319,14 @@ export function App() {
               <ChevronLeft className="w-6 h-6" />
             </button>
             
-            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto md:overflow-hidden md:flex-wrap scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x md:snap-none snap-mandatory">
+            <div ref={colorScrollContainerRef} className="flex gap-4 overflow-x-auto md:overflow-hidden md:flex-wrap scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x md:snap-none snap-mandatory">
               {[
                 { src: '/assets/color1.jpg', name: 'Gri' },
                 { src: '/assets/color2.jpg', name: 'Kahve' },
                 { src: '/assets/color3.jpg', name: 'Yeşil' }
               ].map((color, i) => (
-                <div key={i} className="flex-shrink-0 w-full md:w-[calc(35%-1rem)] snap-center">
-                  <div className="aspect-[16/9] md:aspect-[2/1] rounded-2xl overflow-hidden shadow-lg">
+                <div key={i} className="flex-shrink-0 w-full md:w-[calc(33.333%-0.75rem)] snap-center">
+                  <div className="aspect-[4/3] md:aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
                     <img 
                       src={color.src} 
                       alt={color.name} 
