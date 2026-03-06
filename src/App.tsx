@@ -143,7 +143,7 @@ export function App() {
       {/* Tersane Istanbul Section */}
       <section className="relative py-32 md:py-48 bg-reyowa-green text-white overflow-hidden z-20">
         {/* Background Image */}
-        <div className="absolute inset-0 opacity-[0.28] blur-[30px]">
+        <div className="absolute inset-0 opacity-[0.40] blur-[15px]">
           <img 
             src="/background-image.jpg" 
             alt="Background" 
