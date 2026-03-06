@@ -83,8 +83,12 @@ export function App() {
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
-          <div className="text-right max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
-            Oakberry X Reyowa <br /> — Tersane Koleksiyonu
+          <div className="w-32 md:w-40">
+            <img 
+               src="/oakberry-logo.png" 
+               alt="Oakberry Logo" 
+               className="w-full h-auto object-contain"
+             />
           </div>
         </header>
 
