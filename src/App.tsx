@@ -63,7 +63,7 @@ export function App() {
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col justify-between p-6 md:p-12 overflow-hidden">
         {/* Hero Background Image */}
-        <div className="absolute inset-0 opacity-[0.40]">
+        <div className="absolute inset-0">
           <img 
             src="/hero-background.jpg" 
             alt="Hero Background" 
