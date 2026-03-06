@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-reyowa-green: #22503c;
+  --color-reyowa-blue: #95adf2;
+  --color-reyowa-grey: #dedded;
+  
+  --font-sans: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.texture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.speckled-bg {
+  background-color: #dedded;
+  background-image: 
+    radial-gradient(circle at 10% 20%, #22503c 2px, transparent 2px),
+    radial-gradient(circle at 30% 40%, #95adf2 3px, transparent 3px),
+    radial-gradient(circle at 80% 50%, #000000 2.5px, transparent 2.5px),
+    radial-gradient(circle at 50% 80%, #22503c 1.5px, transparent 1.5px),
+    radial-gradient(circle at 70% 10%, #95adf2 2px, transparent 2px),
+    radial-gradient(circle at 90% 90%, #000000 3px, transparent 3px),
+    radial-gradient(circle at 20% 80%, #ffffff 4px, transparent 4px),
+    radial-gradient(circle at 60% 30%, #22503c 2px, transparent 2px),
+    radial-gradient(circle at 45% 15%, #95adf2 1px, transparent 1px),
+    radial-gradient(circle at 85% 75%, #ffffff 2.5px, transparent 2.5px);
+  background-size: 150px 150px;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.text-outline-light {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+::selection {
+  background-color: #22503c;
+  color: #ffffff;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
