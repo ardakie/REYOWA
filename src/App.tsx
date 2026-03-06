@@ -417,9 +417,9 @@ export function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12 px-6 border-t-[16px] border-reyowa-green">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
-          <div className="w-32">
+      <footer className="bg-black text-white py-8 md:py-12 px-4 md:px-6 border-t-[16px] border-reyowa-green">
+        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center gap-4 md:gap-12">
+          <div className="w-20 md:w-32 flex-shrink-0">
             <img 
                src="/logo.png" 
                alt="REYOWA Logo" 
@@ -430,11 +430,11 @@ export function App() {
             href="https://reyowa.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
+            className="flex-1 text-center text-base md:text-lg font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
           >
             reyowa.com
           </a>
-          <div className="w-32">
+          <div className="w-20 md:w-32 flex-shrink-0">
             <img 
                src="/atersist.png" 
                alt="Tersane İstanbul" 
