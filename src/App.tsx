@@ -75,7 +75,7 @@ export function App() {
           >
             <div className="overflow-hidden">
               <motion.h1 variants={textReveal} className="text-[5.5vw] md:text-[3.5vw] font-black leading-[0.85] tracking-tighter uppercase">
-                Oakberry X Reyowa <span className="text-outline">|</span>
+                Oakberry X Reyowa <span className="text-outline">—</span>
               </motion.h1>
             </div>
             <div className="overflow-hidden flex items-center gap-4 md:gap-8 mt-2 md:mt-4">
