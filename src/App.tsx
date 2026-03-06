@@ -83,11 +83,11 @@ export function App() {
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
-          <div className="w-32 md:w-40">
+          <div className="w-32 md:w-40 flex items-start justify-end">
             <img 
                src="/oakberry-logo.png" 
                alt="Oakberry Logo" 
-               className="w-full h-auto object-contain scale-[0.66] origin-right"
+               className="w-full h-auto object-contain scale-[0.66]"
              />
           </div>
         </header>
