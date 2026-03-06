@@ -343,19 +343,19 @@ export function App() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6 border-t-[16px] border-reyowa-green">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
           <div className="w-32">
             <img 
                src="/logo.png" 
                alt="REYOWA Logo" 
-               className="w-full h-auto brightness-125 saturate-150"
+               className="w-full h-auto brightness-125 saturate-150 scale-[0.77] origin-left"
              />
           </div>
-          <div className="w-48">
+          <div className="w-32">
             <img 
                src="/atersist.png" 
                alt="Tersane İstanbul" 
-               className="w-full h-auto"
+               className="w-full h-auto scale-[0.77] origin-right"
              />
           </div>
         </div>
