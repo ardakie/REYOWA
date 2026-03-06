@@ -319,7 +319,7 @@ export function App() {
               <ChevronLeft className="w-6 h-6" />
             </button>
             
-            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x snap-mandatory">
+            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto md:overflow-hidden md:flex-wrap scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x md:snap-none snap-mandatory">
               {[
                 { src: '/assets/color1.jpg', name: 'Gri' },
                 { src: '/assets/color2.jpg', name: 'Kahve' },
