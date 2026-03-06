@@ -315,18 +315,18 @@ export function App() {
           </motion.div>
 
           <div className="relative mb-12">
-            <button onClick={colorScrollLeft} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors hidden md:block">
+            <button onClick={colorScrollLeft} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors md:hidden">
               <ChevronLeft className="w-6 h-6" />
             </button>
             
-            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto scroll-smooth pb-4 px-0 md:px-12 hide-scrollbar snap-x snap-mandatory">
+            <div ref={colorScrollContainerRef} className="flex gap-6 overflow-x-auto scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x snap-mandatory">
               {[
                 { src: '/assets/color1.jpg', name: 'Gri' },
                 { src: '/assets/color2.jpg', name: 'Kahve' },
                 { src: '/assets/color3.jpg', name: 'Yeşil' }
               ].map((color, i) => (
-                <div key={i} className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] snap-center">
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <div key={i} className="flex-shrink-0 w-full md:w-[calc(35%-1rem)] snap-center">
+                  <div className="aspect-[16/9] md:aspect-[2/1] rounded-2xl overflow-hidden shadow-lg">
                     <img 
                       src={color.src} 
                       alt={color.name} 
@@ -337,7 +337,7 @@ export function App() {
               ))}
             </div>
 
-            <button onClick={colorScrollRight} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors hidden md:block">
+            <button onClick={colorScrollRight} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors md:hidden">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
