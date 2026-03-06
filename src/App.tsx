@@ -142,6 +142,15 @@ export function App() {
 
       {/* Tersane Istanbul Section */}
       <section className="relative py-32 md:py-48 bg-reyowa-green text-white overflow-hidden z-20">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-10 blur-[30px]">
+          <img 
+            src="/background-image.jpg" 
+            alt="Background" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-black/10 transform skew-x-[-15deg] translate-x-20"></div>
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-reyowa-blue/30 rounded-full blur-[80px] -translate-y-1/2 -translate-x-1/2"></div>
