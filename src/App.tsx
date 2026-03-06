@@ -297,12 +297,15 @@ export function App() {
             
             <div ref={scrollContainerRef} className="flex gap-4 overflow-x-auto scroll-smooth pb-4 px-12 hide-scrollbar">
               {Array.from({ length: 15 }).map((_, i) => (
-                <div key={i} className="flex-shrink-0 w-72 md:w-96 aspect-square rounded-2xl overflow-hidden group">
+                <div key={i} className="flex-shrink-0 w-72 md:w-96 aspect-square rounded-2xl overflow-hidden group relative">
                   <img 
                     src={`/assets/image${i + 1}.jpg`} 
                     alt={`Örnek Çalışma ${i + 1}`} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span className="text-white text-5xl md:text-7xl font-black opacity-50 rotate-[-30deg] select-none">ÖRNEK</span>
+                  </div>
                 </div>
               ))}
             </div>
