@@ -61,8 +61,8 @@ export function App() {
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
-          <div className="text-right max-w-[150px] md:max-w-xs text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
-            Sürdürülebilir <br /> Tasarım Alanı
+          <div className="text-right max-w-[200px] md:max-w-sm text-xs md:text-sm font-semibold uppercase leading-tight opacity-70">
+            Oakberry X Reyowa <br /> | Tersane Koleksiyonu
           </div>
         </header>
 
