@@ -66,7 +66,7 @@ export function App() {
         <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-reyowa-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-reyowa-green/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-        <header className="flex justify-center items-start z-10 w-full relative">
+        <header className="flex justify-center items-center z-10 w-full relative">
           <div className="absolute left-0 w-32 md:w-40">
             <img 
                src="/logo.png" 
