@@ -74,19 +74,14 @@ export function App() {
             className="flex flex-col gap-1 overflow-hidden"
           >
             <div className="overflow-hidden">
-              <motion.h1 variants={textReveal} className="text-[6.5vw] md:text-[4vw] font-black leading-[0.85] tracking-tighter uppercase">
-                Sürdürülebilir <span className="text-outline"></span>
-              </motion.h1>
-            </div>
-            <div className="overflow-hidden">
-              <motion.h1 variants={textReveal} className="text-[6.5vw] md:text-[4vw] font-black leading-[0.85] tracking-tighter uppercase text-reyowa-green">
-                Tasarım
+              <motion.h1 variants={textReveal} className="text-[5.5vw] md:text-[3.5vw] font-black leading-[0.85] tracking-tighter uppercase">
+                Oakberry X Reyowa <span className="text-outline">|</span>
               </motion.h1>
             </div>
             <div className="overflow-hidden flex items-center gap-4 md:gap-8 mt-2 md:mt-4">
               <motion.div variants={textReveal} className="h-2 w-16 md:w-32 bg-reyowa-blue"></motion.div>
-              <motion.h1 variants={textReveal} className="text-[6vw] md:text-[4vw] font-bold leading-none tracking-tight uppercase text-black/20">
-                Alanı
+              <motion.h1 variants={textReveal} className="text-[5.5vw] md:text-[3.5vw] font-bold leading-none tracking-tight uppercase text-reyowa-green">
+                Tersane Koleksiyonu
               </motion.h1>
             </div>
           </motion.div>
