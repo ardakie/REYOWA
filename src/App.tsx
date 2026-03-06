@@ -413,6 +413,14 @@ export function App() {
                className="w-full h-auto brightness-125 saturate-150 scale-[0.77] origin-left"
              />
           </div>
+          <a
+            href="https://reyowa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
+          >
+            reyowa.com
+          </a>
           <div className="w-32">
             <img 
                src="/atersist.png" 
