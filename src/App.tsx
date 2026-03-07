@@ -262,12 +262,17 @@ export function App() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="relative flex items-center justify-center"
+              className="relative"
             >
-               <div className="text-center">
-                 <p className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white leading-tight">
-                   buraya oakberry açıyoz masa sandalyeyi buraya atcaz
-                 </p>
+               <div className="bg-gradient-to-br from-reyowa-green to-reyowa-blue p-10 md:p-14 rounded-3xl relative overflow-hidden">
+                <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
+                <div className="absolute -left-20 -bottom-20 w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
+                
+                <div className="relative z-10 flex items-center justify-center min-h-[300px]">
+                  <p className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white leading-tight text-center">
+                    buraya oakberry açıyoz masa sandalyeyi buraya atcaz
+                  </p>
+                </div>
                </div>
              </motion.div>
           </div>
