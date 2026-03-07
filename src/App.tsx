@@ -61,7 +61,7 @@ export function App() {
       <div className="texture-overlay z-50 mix-blend-multiply opacity-30"></div>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-between p-6 md:p-12 overflow-hidden">
+      <section className="relative h-screen flex flex-col justify-between p-3 md:p-6 overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0">
           <img 
