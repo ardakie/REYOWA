@@ -487,8 +487,8 @@ export function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8 md:py-12 px-4 md:px-6 border-t-[16px] border-reyowa-green">
-        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center gap-4 md:gap-12">
+      <footer className="bg-black text-white py-8 md:py-12 px-4 md:px-6 border-t-[16px] border-reyowa-green relative">
+        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center gap-4 md:gap-12 mb-6 md:mb-10">
           <div className="w-20 md:w-32 flex-shrink-0">
             <img 
                src="/logo.png" 
@@ -511,6 +511,15 @@ export function App() {
                className="w-full h-auto scale-[0.77] origin-right"
              />
           </div>
+        </div>
+        
+        <div className="absolute bottom-4 md:bottom-6 right-4 md:right-6 flex items-center gap-3">
+          <span className="text-xs uppercase font-bold tracking-wider opacity-60">Powered by</span>
+          <img 
+            src="/weiss-logo.png" 
+            alt="WEISS" 
+            className="h-6 md:h-8 w-auto opacity-[0.70]"
+          />
         </div>
       </footer>
     </div>
