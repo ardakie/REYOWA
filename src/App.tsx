@@ -496,14 +496,24 @@ export function App() {
                className="w-full h-auto brightness-125 saturate-150 scale-[0.77] origin-left"
              />
           </div>
-          <a
-            href="https://reyowa.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 text-center text-base md:text-lg font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
-          >
-            reyowa.com
-          </a>
+          <div className="flex-1 flex flex-col items-center gap-1 md:gap-2">
+            <a
+              href="https://reyowa.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center text-base md:text-lg font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
+            >
+              reyowa.com
+            </a>
+            <a
+              href="https://oakberry.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center text-sm md:text-base font-bold opacity-70 hover:opacity-100 hover:text-reyowa-green transition-all duration-300"
+            >
+              oakberry.com
+            </a>
+          </div>
           <div className="w-20 md:w-32 flex-shrink-0">
             <img 
                src="/atersist.png" 
