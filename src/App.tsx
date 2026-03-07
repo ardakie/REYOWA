@@ -87,7 +87,7 @@ export function App() {
             <img 
                src="/oakberry-logo.png" 
                alt="Oakberry Logo" 
-               className="w-full h-auto object-contain scale-[0.66] -translate-y-0.3"
+               className="w-full h-auto object-contain scale-[0.66] -mt-4 md:-mt-8"
              />
           </div>
         </header>
