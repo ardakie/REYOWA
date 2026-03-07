@@ -220,7 +220,7 @@ export function App() {
             className="mb-16"
           >
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-center">
-              TERSANE
+              KONUM
             </h2>
           </motion.div>
 
@@ -262,48 +262,14 @@ export function App() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="relative"
+              className="relative flex items-center justify-center"
             >
-              <div className="bg-gradient-to-br from-reyowa-green to-reyowa-blue p-10 md:p-14 rounded-3xl relative overflow-hidden">
-                <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
-                <div className="absolute -left-20 -bottom-20 w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
-                
-                <div className="relative z-10">
-                  <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
-                    <div className="w-2 h-2 bg-reyowa-blue rounded-full animate-pulse"></div>
-                    <span className="uppercase text-sm font-bold tracking-wider">Canlı</span>
-                  </div>
-                  
-                  <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-tight">
-                    Tarihsel Miras<br/>
-                    <span className="text-white/90">Modern Tasarım</span>
-                  </h3>
-                  
-                  <p className="text-lg md:text-xl text-white/90 font-medium leading-relaxed mb-8">
-                    Tersane İstanbul, yüzyıllık gemi inşa geleneğini modern sürdürülebilir tasarım anlayışıyla buluşturuyor. Endüstriyel miras, yenilikçi yaklaşımın inancı noktası.
-                  </p>
-                  
-                  <div className="grid grid-cols-3 gap-4 mb-8">
-                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
-                      <div className="text-3xl md:text-4xl font-black mb-1">100+</div>
-                      <div className="text-xs uppercase tracking-wider opacity-80">Yıl</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
-                      <div className="text-3xl md:text-4xl font-black mb-1">5000+</div>
-                      <div className="text-xs uppercase tracking-wider opacity-80">m² Alan</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
-                      <div className="text-3xl md:text-4xl font-black mb-1">5</div>
-                      <div className="text-xs uppercase tracking-wider opacity-80">Tasarımcı</div>
-                    </div>
-                  </div>
-                  
-                  <p className="text-base md:text-lg font-medium leading-relaxed opacity-80 italic">
-                    "Geçmişten geleceğe uzanan bir köprü. Her bir detay, bu mekanın hikayesini anlatıyor."
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+               <div className="text-center">
+                 <p className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white leading-tight">
+                   buraya oakberry açıyoz masa sandalyeyi buraya atcaz
+                 </p>
+               </div>
+             </motion.div>
           </div>
         </div>
       </section>
