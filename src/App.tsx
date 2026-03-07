@@ -514,11 +514,11 @@ export function App() {
         </div>
         
         <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 flex items-center gap-2">
-          <span className="text-[10px] font-bold tracking-wider opacity-60">Powered by</span>
+          <span className="text-[17px] font-bold tracking-wider opacity-60">Powered by</span>
           <img 
             src="/weiss-logo.png" 
             alt="WEISS" 
-            className="h-[10px] w-auto opacity-[0.70]"
+            className="h-[17px] w-auto opacity-[0.70]"
           />
         </div>
       </footer>
