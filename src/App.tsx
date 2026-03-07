@@ -209,6 +209,105 @@ export function App() {
         </div>
       </section>
 
+      {/* Tersane Görselleri Section */}
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-16"
+          >
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-center">
+              TERSANE
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="space-y-6"
+            >
+              <motion.div variants={fadeInUp} className="rounded-3xl overflow-hidden shadow-2xl group">
+                <img 
+                  src="/tersane-main.jpg" 
+                  alt="Tersane Ana Görsel" 
+                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </motion.div>
+              <div className="grid grid-cols-2 gap-6">
+                <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group">
+                  <img 
+                    src="/tersane-secondary1.jpg" 
+                    alt="Tersane Görsel 1" 
+                    className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </motion.div>
+                <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group">
+                  <img 
+                    src="/tersane-secondary2.png" 
+                    alt="Tersane Görsel 2" 
+                    className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                </motion.div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="relative"
+            >
+              <div className="bg-gradient-to-br from-reyowa-green to-reyowa-blue p-10 md:p-14 rounded-3xl relative overflow-hidden">
+                <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
+                <div className="absolute -left-20 -bottom-20 w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
+                
+                <div className="relative z-10">
+                  <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
+                    <div className="w-2 h-2 bg-reyowa-blue rounded-full animate-pulse"></div>
+                    <span className="uppercase text-sm font-bold tracking-wider">Canlı</span>
+                  </div>
+                  
+                  <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-tight">
+                    Tarihsel Miras<br/>
+                    <span className="text-white/90">Modern Tasarım</span>
+                  </h3>
+                  
+                  <p className="text-lg md:text-xl text-white/90 font-medium leading-relaxed mb-8">
+                    Tersane İstanbul, yüzyıllık gemi inşa geleneğini modern sürdürülebilir tasarım anlayışıyla buluşturuyor. Endüstriyel miras, yenilikçi yaklaşımın inancı noktası.
+                  </p>
+                  
+                  <div className="grid grid-cols-3 gap-4 mb-8">
+                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
+                      <div className="text-3xl md:text-4xl font-black mb-1">100+</div>
+                      <div className="text-xs uppercase tracking-wider opacity-80">Yıl</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
+                      <div className="text-3xl md:text-4xl font-black mb-1">5000+</div>
+                      <div className="text-xs uppercase tracking-wider opacity-80">m² Alan</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center">
+                      <div className="text-3xl md:text-4xl font-black mb-1">5</div>
+                      <div className="text-xs uppercase tracking-wider opacity-80">Tasarımcı</div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-base md:text-lg font-medium leading-relaxed opacity-80 italic">
+                    "Geçmişten geleceğe uzanan bir köprü. Her bir detay, bu mekanın hikayesini anlatıyor."
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Tasarım ve Koleksiyon Kurgusu */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
         <div className="max-w-7xl mx-auto">
