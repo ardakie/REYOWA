@@ -65,3 +65,104 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Production Line Animations */
+@layer keyframes {
+  @keyframes cup-move {
+    0%   { transform: translateX(-75px); }
+    21%  { transform: translateX(268px); }
+    100% { transform: translateX(268px); }
+  }
+
+  @keyframes cup-fade {
+    0%    { opacity: 1; }
+    19%   { opacity: 1; }
+    21%   { opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+  @keyframes gran-move {
+    0%   { transform: translateX(248px); }
+    37%  { transform: translateX(248px); }
+    57%  { transform: translateX(554px); }
+    100% { transform: translateX(554px); }
+  }
+
+  @keyframes gran-fade {
+    0%    { opacity: 0; }
+    37%   { opacity: 0; }
+    38%   { opacity: 1; }
+    55%   { opacity: 1; }
+    57%   { opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+  @keyframes panel-move {
+    0%   { transform: translateX(594px); }
+    72%  { transform: translateX(594px); }
+    97%  { transform: translateX(1010px); }
+    100% { transform: translateX(594px); }
+  }
+
+  @keyframes panel-fade {
+    0%    { opacity: 0; }
+    72%   { opacity: 0; }
+    73%   { opacity: 1; }
+    96%   { opacity: 1; }
+    97%   { opacity: 0; }
+    100%  { opacity: 0; }
+  }
+
+  @keyframes sq1 {
+    0%   { transform: scaleY(1)    scaleX(1); }
+    23%  { transform: scaleY(1)    scaleX(1); }
+    27%  { transform: scaleY(1.32) scaleX(0.76); }
+    30%  { transform: scaleY(0.68) scaleX(1.30); }
+    33%  { transform: scaleY(1.20) scaleX(0.84); }
+    36%  { transform: scaleY(0.88) scaleX(1.10); }
+    38%  { transform: scaleY(1)    scaleX(1); }
+    100% { transform: scaleY(1)    scaleX(1); }
+  }
+
+  @keyframes sq2 {
+    0%   { transform: scaleY(1)    scaleX(1); }
+    59%  { transform: scaleY(1)    scaleX(1); }
+    63%  { transform: scaleY(1.32) scaleX(0.76); }
+    66%  { transform: scaleY(0.68) scaleX(1.30); }
+    69%  { transform: scaleY(1.20) scaleX(0.84); }
+    72%  { transform: scaleY(0.88) scaleX(1.10); }
+    73%  { transform: scaleY(1)    scaleX(1); }
+    100% { transform: scaleY(1)    scaleX(1); }
+  }
+
+  @keyframes belt-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(32px); }
+  }
+}
+
+.animate-cup-move {
+  animation: cup-move 10s linear infinite, cup-fade 10s linear infinite;
+}
+
+.animate-gran-move {
+  animation: gran-move 10s linear infinite, gran-fade 10s linear infinite;
+}
+
+.animate-panel-move {
+  animation: panel-move 10s linear infinite, panel-fade 10s linear infinite;
+}
+
+.animate-mach1 {
+  transform-origin: 268px 187px;
+  animation: sq1 10s linear infinite;
+}
+
+.animate-mach2 {
+  transform-origin: 622px 187px;
+  animation: sq2 10s linear infinite;
+}
+
+.animate-belt-scroll {
+  animation: belt-scroll .55s linear infinite;
+}
