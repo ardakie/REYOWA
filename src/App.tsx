@@ -719,11 +719,12 @@ export function App() {
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="relative max-w-[90vw] max-h-[90vh] cursor-default"
+            className="relative cursor-default flex items-center justify-center"
+            style={{ maxWidth: '90vw', maxHeight: '90vh' }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute -top-4 -right-4 bg-black/80 text-white p-3 rounded-full hover:bg-black transition-colors shadow-lg"
+              className="absolute -top-4 -right-4 z-10 bg-black/80 text-white p-3 rounded-full hover:bg-black transition-colors shadow-lg"
               onClick={() => setSelectedImage(null)}
             >
               <X className="w-8 h-8" />
@@ -731,7 +732,7 @@ export function App() {
             <img
               src={selectedImage}
               alt="Enlarged view"
-              className="w-full h-full object-contain"
+              style={{ maxWidth: '90vw', maxHeight: '90vh', objectFit: 'contain', display: 'block' }}
             />
           </motion.div>
         </motion.div>
