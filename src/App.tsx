@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import { X } from "lucide-react";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/montserrat/900.css";
-import { ArrowDownRight, Recycle, Users, Factory, Square, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowDownRight, Recycle, Users, Factory, Square, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 // Animation Variants
 const fadeInUp: any = {
@@ -681,11 +680,11 @@ export function App() {
           </motion.div>
 
           <div className="relative">
-            <button onClick={scrollLeft} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors">
+            <button onClick={scrollLeft} className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors">
               <ChevronLeft className="w-6 h-6" />
             </button>
             
-             <div ref={scrollContainerRef} className="flex gap-4 overflow-x-auto scroll-smooth pb-4 px-12 hide-scrollbar">
+             <div ref={scrollContainerRef} className="flex gap-4 overflow-x-auto scroll-smooth pb-4 px-0 md:px-12 hide-scrollbar">
               {Array.from({ length: 15 }).map((_, i) => (
                 <div key={i} className="flex-shrink-0 w-72 md:w-96 aspect-square rounded-2xl overflow-hidden group relative">
                   <img 
@@ -701,7 +700,7 @@ export function App() {
               ))}
             </div>
 
-            <button onClick={scrollRight} className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors">
+            <button onClick={scrollRight} className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black text-white p-3 rounded-full shadow-lg hover:bg-reyowa-green transition-colors">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
@@ -714,12 +713,13 @@ export function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 cursor-pointer"
+          onClick={() => setSelectedImage(null)}
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="relative max-w-[90vw] max-h-[90vh]"
+            className="relative max-w-[90vw] max-h-[90vh] cursor-default"
             onClick={(e) => e.stopPropagation()}
           >
             <button
