@@ -460,10 +460,9 @@ export function App() {
             </h2>
           </motion.div>
 
-          <div className="flex justify-center items-center">
-            <div className="w-full flex justify-center">
-              <div className="w-full max-w-[900px] scale-[0.4] md:scale-[0.6] lg:scale-[0.8] xl:scale-[1] origin-top">
-                <svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+          <div className="w-full">
+            <div className="w-full max-w-[900px] mx-auto">
+              <svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
                   <defs>
                     <filter id="sk" x="-6%" y="-6%" width="112%" height="112%">
                       <feTurbulence type="fractalNoise" baseFrequency="0.042" numOctaves="4" seed="5" result="n"/>
@@ -659,7 +658,6 @@ export function App() {
                   </g>
                 </svg>
               </div>
-            </div>
           </div>
         </div>
       </section>
