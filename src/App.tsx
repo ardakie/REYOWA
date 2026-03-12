@@ -232,7 +232,7 @@ export function App() {
               <Sparkles className="w-12 h-12 text-reyowa-blue mb-6" />
               <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">Tasarım Felsefemiz</h3>
               <p className="text-lg md:text-xl font-medium leading-relaxed text-gray-700">
-                Bu malzemenin sadece bir "kaplama" olarak değil. Kendi başına heykelsi, mimari ve güçlü bir estetik dil üreten bir materyal olarak ele alınması.
+                Bu malzemenin sadece bir "kaplama" olarak değil. Kendi başına heykelsi, mimari ve güçlü bir estetik dil üreten materyal olarak ele alınması.
               </p>
             </div>
           </motion.div>
