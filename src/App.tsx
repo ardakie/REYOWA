@@ -203,6 +203,55 @@ export function App() {
         </div>
       </section>
 
+      {/* Ek Görseller (Lokasyon) */}
+      <section className="py-12 md:py-24 px-6 md:px-12 bg-white relative z-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="md:col-span-8 rounded-3xl overflow-hidden shadow-2xl group aspect-[16/9] md:aspect-auto md:h-[600px]"
+            >
+              <img 
+                src="/tersane-1.jpg" 
+                alt="Tersane Görsel" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+            <div className="md:col-span-4 flex flex-col gap-6 md:gap-8 md:h-[600px]">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="rounded-3xl overflow-hidden shadow-xl group flex-1 md:h-1/2"
+              >
+                <img 
+                  src="/unnamed.png" 
+                  alt="Tersane Detay" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="rounded-3xl overflow-hidden shadow-xl group flex-1 md:h-1/2"
+              >
+                <img 
+                  src="/tersane-istanbul-avm.jpg.webp" 
+                  alt="Tersane AVM" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                />
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 1. Reyowa Kompozit Paneller & Tasarım Felsefesi */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-reyowa-grey relative z-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
