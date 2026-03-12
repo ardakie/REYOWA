@@ -4,7 +4,7 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/montserrat/900.css";
-import { ArrowDownRight, Recycle, Users, Factory, Square, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowDownRight, Recycle, Users, Factory, Square, ChevronLeft, ChevronRight, X, CheckCircle2, PenTool, Video, Calendar, Sparkles } from "lucide-react";
 
 // Animation Variants
 const fadeInUp: any = {
@@ -202,6 +202,196 @@ export function App() {
           </motion.div>
         </div>
       </section>
+
+      {/* 1. Reyowa Kompozit Paneller & Tasarım Felsefesi */}
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-reyowa-grey relative z-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-none">
+              Reyowa <br/> Kompozit Paneller
+            </h2>
+            <div className="w-16 h-2 bg-reyowa-green mb-8"></div>
+            <p className="text-xl md:text-2xl font-medium leading-relaxed">
+              Projede %100 geri dönüştürülmüş plastikten üretilen <span className="font-bold text-reyowa-blue">Reyowa kompozit panelleri</span> sunuyoruz.
+            </p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="bg-white p-10 md:p-14 rounded-3xl shadow-xl border-l-8 border-reyowa-blue relative overflow-hidden group"
+          >
+            <div className="speckled-bg absolute inset-0 opacity-10 group-hover:opacity-30 transition-opacity duration-700"></div>
+            <div className="relative z-10">
+              <Sparkles className="w-12 h-12 text-reyowa-blue mb-6" />
+              <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">Tasarım Felsefemiz</h3>
+              <p className="text-lg md:text-xl font-medium leading-relaxed text-gray-700">
+                Bu malzemenin sadece bir "kaplama" olarak değil. Kendi başına heykelsi, mimari ve güçlü bir estetik dil üreten bir materyal olarak ele alınması.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 2. Tasarım Kriterlerimiz */}
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-reyowa-blue text-white relative z-20 overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-16 text-center"
+          >
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
+              Tasarım Kriterlerimiz
+            </h2>
+          </motion.div>
+          
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="flex flex-col gap-8"
+          >
+            <motion.div variants={fadeInUp} className="flex gap-6 items-start bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
+              <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-reyowa-green flex-shrink-0 mt-1" />
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+                Tasarımın ana omurgasını <span className="font-bold underline decoration-reyowa-green underline-offset-4">(minimum %60)</span> Reyowa geri dönüştürülmüş kompozit paneller oluşturmalı.
+              </p>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="flex gap-6 items-start bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
+              <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-reyowa-green flex-shrink-0 mt-1" />
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+                Malzemenin o "geri dönüştürülmüş" karakteristik dokusu saklanmamalı, aksine gururla sergilenmeli.
+              </p>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="flex gap-6 items-start bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
+              <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-reyowa-green flex-shrink-0 mt-1" />
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+                Tasarlanacak obje, kamusal bir yeme-içme alanının (Oakberry) dinamiklerine dayanacak fonksiyonellikte olmalı.
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 3. Tasarım Hikayesini Nasıl Anlatacağız? */}
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-16 md:mb-24 text-center max-w-4xl mx-auto"
+          >
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
+              Tasarım Hikayesini <br className="hidden md:block"/> Nasıl Anlatacağız?
+            </h2>
+            <p className="text-2xl md:text-3xl font-medium text-reyowa-blue">
+              Bu projede süreç ortaya çıkan obje kadar değerli.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="bg-black text-white p-10 md:p-14 rounded-[2rem] hover:rounded-[3rem] transition-all duration-500"
+            >
+              <PenTool className="w-12 h-12 text-reyowa-green mb-8" />
+              <h3 className="text-2xl md:text-3xl font-bold uppercase mb-4">Tasarımcının İmzası</h3>
+              <p className="text-lg text-gray-300 font-medium leading-relaxed">
+                Tasarlanan her objenin üzerinde künye bilgileri yer alacak. Eserin kime ait olduğu her zaman görünür olacak.
+              </p>
+            </motion.div>
+
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="bg-reyowa-grey p-10 md:p-14 rounded-[2rem] hover:rounded-[1rem] transition-all duration-500"
+            >
+              <Video className="w-12 h-12 text-reyowa-blue mb-8" />
+              <h3 className="text-2xl md:text-3xl font-bold uppercase mb-4">Belgeleme</h3>
+              <p className="text-lg font-medium leading-relaxed text-gray-700">
+                Atölye çalışmaları, "sketch-to-prototype" süreci belgelenerek içerikler üretilecek. Mağaza içindeki ekranlarda ve medya kanalları üzerinden bu belgesel servis edilecek. Mass ve dijital medya kanallarından projenin - dolayısıyla tasarımcıların - PR çalışması yapılacak. Ayrıca özel bir katalog hazırlanacak.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="bg-reyowa-green text-white p-10 md:p-16 rounded-[2rem] relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-[url('/background-image.jpg')] opacity-20 mix-blend-overlay object-cover"></div>
+            <p className="relative z-10 text-xl md:text-2xl font-medium leading-relaxed">
+              Tersane İstanbul’un kültür ve sanat odaklı gelişimi, projeye dahil olan tasarımcı ve sanatçılar için güçlü bir görünürlük potansiyeli sunacaktır. Bölgede markaların tasarımı merkezine alan amiral mağazalarının bulunması ve Contemporary Istanbul gibi uluslararası etkinliklerin düzenlenmesi, tasarımcıların üretimlerinin daha geniş bir kitleye ulaşmasını sağlayacaktır. Oakberry mağazasının Tersane içindeki en görünür alanlardan birinde konumlanması ise bu etkiyi daha da güçlendirecek ve projede yer alan tasarımcıların görünürlüğünü artıracaktır.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 4. Takvimimiz */}
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-black text-white relative z-20">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-20 text-center flex flex-col items-center"
+          >
+            <Calendar className="w-16 h-16 text-reyowa-green mb-6" />
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
+              Takvimimiz
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+            {/* Connecting Line for Desktop */}
+            <div className="hidden md:block absolute top-[40px] left-0 w-full h-1 bg-white/20 -z-10"></div>
+            
+            {[
+              { month: "Mart", event: "Konsept ve Eskiz Önerilerinin Paylaşılması" },
+              { month: "Nisan", event: "Tasarımın Geliştirilmesi ve Prototip" },
+              { month: "Mayıs", event: "Üretim Süreci" },
+              { month: "Mayıs Sonu", event: "Tersane İstanbul'da Kurulum ve Açılış" },
+            ].map((item, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2, duration: 0.6 }}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="w-20 h-20 rounded-full bg-black border-4 border-reyowa-blue flex items-center justify-center font-bold text-xl mb-6 shadow-[0_0_30px_rgba(40,116,252,0.3)]">
+                  {index + 1}
+                </div>
+                <h3 className="text-2xl font-black uppercase tracking-widest text-reyowa-green mb-4">{item.month}</h3>
+                <p className="text-lg font-medium text-gray-300 leading-relaxed max-w-[200px]">{item.event}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Tersane Görselleri Section */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
