@@ -408,7 +408,7 @@ export function App() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[5fr_3fr] gap-8 md:gap-12 items-center">
             {/* Left side: Main Image */}
             <motion.div
               initial="hidden"
