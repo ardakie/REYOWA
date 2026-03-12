@@ -4,7 +4,7 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/montserrat/900.css";
-import { ArrowDownRight, Recycle, Users, Factory, Square, ChevronLeft, ChevronRight, X, CheckCircle2, PenTool, Video, Calendar, Sparkles } from "lucide-react";
+import { ArrowDownRight, Recycle, Users, Factory, ChevronLeft, ChevronRight, X, CheckCircle2, PenTool, Video, Calendar, Sparkles } from "lucide-react";
 
 // Animation Variants
 const fadeInUp: any = {
@@ -468,29 +468,36 @@ export function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             
-            {/* Card 1 */}
+            {/* Card 1: Kolektif Uyum */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="bg-black text-white p-8 md:p-12 rounded-[2rem] hover:rounded-[3rem] transition-all duration-500 flex flex-col justify-between group"
+              className="bg-reyowa-blue text-white p-8 md:p-12 rounded-[2rem] relative overflow-hidden group flex flex-col justify-between"
             >
-              <div>
-                <div className="w-16 h-16 rounded-full bg-reyowa-blue/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                  <Square className="w-8 h-8 text-reyowa-blue" />
+              {/* Giant abstract shapes */}
+              <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <Users className="w-10 h-10 text-reyowa-green" />
+                  <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter">Kolektif Uyum</h3>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase">Üretim</h3>
+                <div className="w-12 h-1.5 bg-white mb-6"></div>
+                <p className="text-lg md:text-xl font-medium leading-relaxed">
+                  Eserler birbirlerinden bağımsız sanatçıların elinden çıksa da, aynı mekanda yaşayacaklardır. Bu nedenle tasarımların doğrudan veya dolaylı <span className="font-bold text-reyowa-green opacity-90">(ortak bir renk paleti, birleşim detayı veya form dili üzerinden)</span> birbiriyle uyum içinde olması beklenmektedir.
+                </p>
               </div>
             </motion.div>
 
-            {/* Card 2 */}
+            {/* Card 2: Materyal ve Üretim Şartları */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="bg-reyowa-grey text-black p-8 md:p-12 rounded-[2rem] hover:rounded-[1rem] transition-all duration-500 relative overflow-hidden group"
+              className="bg-reyowa-grey text-black p-8 md:p-12 rounded-[2rem] hover:rounded-[15px] transition-all duration-500 relative overflow-hidden group"
             >
               <div className="speckled-bg absolute inset-0 opacity-50"></div>
               <div className="relative z-10 flex flex-col justify-between h-full">
@@ -509,33 +516,6 @@ export function App() {
               </div>
             </motion.div>
 
-            {/* Card 3 - Spans full width */}
-            <motion.div 
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="md:col-span-2 bg-reyowa-blue text-black p-8 md:p-16 rounded-[2rem] relative overflow-hidden group"
-            >
-              {/* Giant abstract shapes */}
-              <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
-              
-              <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tighter">Kolektif Uyum</h3>
-                  <div className="w-16 h-2 bg-black mb-8"></div>
-                  <p className="text-xl md:text-2xl font-semibold leading-relaxed">
-                    Eserler birbirlerinden bağımsız sanatçıların elinden çıksa da, aynı mekanda yaşayacaklardır. 
-                  </p>
-                </div>
-                <div className="bg-black text-white p-8 rounded-2xl relative">
-                  <Users className="absolute -top-6 -right-6 w-20 h-20 text-reyowa-green opacity-50 rotate-12" />
-                  <p className="text-lg font-medium leading-relaxed relative z-10">
-                    Bu nedenle tasarımların doğrudan veya dolaylı <span className="text-reyowa-blue font-bold">(ortak bir renk paleti, birleşim detayı veya form dili üzerinden)</span> birbiriyle uyum içinde olması beklenmektedir.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
 
           </div>
         </div>
