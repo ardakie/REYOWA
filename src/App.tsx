@@ -141,7 +141,7 @@ export function App() {
             className="md:col-span-8"
           >
             <p className="text-xl md:text-3xl lg:text-4xl font-semibold leading-snug md:leading-tight">
-              Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
+              Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı sürdürülebilir tasarım alanı yaratıyoruz.
             </p>
           </motion.div>
         </div>
