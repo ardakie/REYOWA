@@ -408,14 +408,14 @@ export function App() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left side: Main Image */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="rounded-3xl overflow-hidden shadow-2xl group h-full"
+              className="rounded-3xl overflow-hidden shadow-2xl group w-full aspect-[4/5]"
             >
               <img 
                 src="/tersane-main.jpg" 
@@ -430,20 +430,20 @@ export function App() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={staggerContainer}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 lg:gap-8 h-full"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 lg:gap-8"
             >
-              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group h-full">
+              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group aspect-square">
                 <img 
                   src="/tersane-secondary1.jpg" 
                   alt="Tersane Görsel 1" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 aspect-[16/9] lg:aspect-auto"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </motion.div>
-              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group h-full">
+              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group aspect-square">
                 <img 
                   src="/tersane-secondary2.png" 
                   alt="Tersane Görsel 2" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 aspect-[16/9] lg:aspect-auto"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </motion.div>
             </motion.div>
