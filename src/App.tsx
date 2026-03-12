@@ -196,7 +196,7 @@ export function App() {
           >
             <div className="inline-flex items-center gap-3 bg-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
               <Factory className="w-5 h-5 text-reyowa-blue" />
-              <span className="uppercase text-sm font-bold tracking-wider">Lokasyon</span>
+              <span className="uppercase text-sm font-bold tracking-wider">Neden Tersane?</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase tracking-tighter leading-none">
               Tersane <br/>
@@ -213,15 +213,12 @@ export function App() {
             className="flex flex-col gap-8 text-lg md:text-2xl font-medium leading-relaxed"
           >
             <motion.p variants={fadeInUp}>
-              Tersane İstanbul, yüzyıllar boyunca üretimin, inşanın ve gemi sanayisinin kalbi olmuştur. Uzun yıllar atıl kalan bu bölgenin kente kazandırılması sürecinde, mekanın <span className="text-reyowa-blue font-bold">"üretim hafızasına"</span> güçlü bir atıf yapıyoruz.
-            </motion.p>
-            <motion.p variants={fadeInUp}>
-              Burayı AVM veya tüketim algısının ötesine taşıyarak, "tüketilen" değil, yeniden "üretilen" bir alan olarak yorumluyoruz.
+              Tersane İstanbul, yüzyıllar boyunca ahşabın ve demirin işlendiği, gemilere hayat veren bir üretim merkezi oldu. Bugün ise Contemporary İstanbul gibi etkinliklerin yer aldığı, kentin sanat ve tasarım kalbi olma yolunda dünya standartlarında bir komplekse dönüşüyor.
             </motion.p>
             <motion.div variants={fadeInUp} className="bg-white text-black p-8 rounded-xl mt-4 shadow-2xl relative overflow-hidden">
               <div className="speckled-bg absolute inset-0 opacity-30"></div>
-              <p className="relative z-10 font-bold text-2xl md:text-3xl">
-                Günümüzün atığı olan plastiği işleyerek ona ikinci bir hayat veriyoruz.
+              <p className="relative z-10 text-lg md:text-xl leading-relaxed">
+                Projede, Tersane’nin "üretim birikiminden” esinlenerek yola çıktık. Fakat bu sefer ahşabı veya demiri değil, çağımızın en yoğun kullanılan materyali plastiğin geri dönüştürülmüş halini -Reyowa panellerini- işleyerek ve göstererek Tersane'nin üretim geçmişine atıfta bulunuyoruz. Beklentimiz, bu dönüşüm hikayesine kendi estetik çizgisiyle katkı sağlayacak, kompozit plastiğin de yeni dünyada sanat/tasarım medyumuna dönüşebileceğini gösterecek yaratıcılar ile çalışmak.
               </p>
             </motion.div>
           </motion.div>
