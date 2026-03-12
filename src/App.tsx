@@ -290,8 +290,9 @@ export function App() {
 
       {/* 2. Tasarım Kriterlerimiz */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-reyowa-blue text-white relative z-20 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/612de85b86b2472e5c3dba2b.jpg.webp')] bg-cover bg-center opacity-20 mix-blend-overlay mix-blend-luminosity"></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
