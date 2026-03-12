@@ -57,7 +57,7 @@ export function App() {
   };
 
   return (
-    <div className="bg-white h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth relative font-sans text-black selection:bg-reyowa-green selection:text-white overflow-x-hidden">
+    <div className="bg-white h-screen overflow-y-auto snap-y snap-proximity scroll-smooth relative font-sans text-black selection:bg-reyowa-green selection:text-white overflow-x-hidden">
       {/* Global Noise Texture Overlay */}
       <div className="texture-overlay z-50 mix-blend-multiply opacity-30"></div>
 
