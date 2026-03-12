@@ -57,12 +57,12 @@ export function App() {
   };
 
   return (
-    <div className="bg-white min-h-screen relative font-sans text-black selection:bg-reyowa-green selection:text-white overflow-hidden">
+    <div className="bg-white h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth relative font-sans text-black selection:bg-reyowa-green selection:text-white overflow-x-hidden">
       {/* Global Noise Texture Overlay */}
       <div className="texture-overlay z-50 mix-blend-multiply opacity-30"></div>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-between p-3 md:p-6 overflow-hidden">
+      <section className="relative h-screen flex flex-col justify-between p-3 md:p-6 overflow-hidden snap-start">
         {/* Hero Background Image */}
         <div className="absolute inset-0 opacity-[0.40]">
           <img 
@@ -125,6 +125,24 @@ export function App() {
         </motion.div>
       </section>
 
+      {/* Preface Section */}
+      <section className="h-screen snap-start flex flex-col justify-center px-6 md:px-24 bg-white relative z-20">
+        <motion.div
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, margin: "-100px" }}
+           variants={fadeInUp}
+           className="max-w-4xl"
+        >
+          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 text-reyowa-blue">
+            Merhaba!
+          </h2>
+          <p className="text-xl md:text-3xl font-semibold leading-relaxed text-black">
+            Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
+          </p>
+        </motion.div>
+      </section>
+
       {/* Intro Section */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
@@ -155,7 +173,7 @@ export function App() {
       </section>
 
       {/* Tersane Istanbul Section */}
-      <section className="relative py-32 md:py-48 bg-reyowa-green text-white overflow-hidden z-20">
+      <section className="relative py-32 md:py-48 bg-reyowa-green text-white overflow-hidden z-20 snap-start">
         {/* Background Image */}
         <div className="absolute inset-0 opacity-[0.40] blur-[15px]">
           <img 
@@ -211,7 +229,7 @@ export function App() {
       </section>
 
       {/* Tersane Görselleri Section */}
-      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20 snap-start">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -281,7 +299,7 @@ export function App() {
       </section>
 
       {/* Tasarım ve Koleksiyon Kurgusu */}
-      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20 snap-start">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -384,7 +402,7 @@ export function App() {
       </section>
 
       {/* Materyal ve Renk Örnekleri Section */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-reyowa-grey relative z-20">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-reyowa-grey relative z-20 snap-start">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
