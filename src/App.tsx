@@ -339,6 +339,7 @@ export function App() {
             variants={fadeInUp}
             className="bg-reyowa-green text-white p-10 md:p-16 rounded-[2rem] relative overflow-hidden"
           >
+            <Sparkles className="absolute -top-6 -left-6 w-24 h-24 text-white/20 -rotate-12" />
             <div className="absolute inset-0 bg-[url('/background-image.jpg')] opacity-20 mix-blend-overlay object-cover"></div>
             <p className="relative z-10 text-xl md:text-2xl font-medium leading-relaxed">
               Tersane İstanbul’un kültür ve sanat odaklı gelişimi, projeye dahil olan tasarımcı ve sanatçılar için güçlü bir görünürlük potansiyeli sunacaktır. Bölgede markaların tasarımı merkezine alan amiral mağazalarının bulunması ve Contemporary Istanbul, Türkiye'nin ilk özel müzesi olan Sadberk Hanım Müzesi'nin yeni sergi mekanının açılacak olması gibi uluslararası etkinliklerin düzenlenmesi, tasarımcıların üretimlerinin daha geniş bir kitleye ulaşmasını sağlayacaktır. Oakberry mağazasının Tersane içindeki en görünür alanlardan birinde konumlanması ise bu etkiyi daha da güçlendirecek ve projede yer alan tasarımcıların görünürlüğünü artıracaktır.
