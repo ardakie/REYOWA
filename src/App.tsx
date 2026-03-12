@@ -130,7 +130,7 @@ export function App() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4 flex items-start">
             <h2 className="text-sm md:text-base font-bold uppercase tracking-widest border-l-4 border-reyowa-blue pl-4">
-              AMACIMIZ
+              Merhaba!
             </h2>
           </div>
           <motion.div 
@@ -141,35 +141,10 @@ export function App() {
             className="md:col-span-8"
           >
             <p className="text-xl md:text-3xl lg:text-4xl font-semibold leading-snug md:leading-tight">
-              Bu proje, REYOWA'nın geri dönüştürülmüş plastikten ürettiği kompozit panellerin tasarım potansiyelini görünür kılmayı amaçlayan mekânsal bir girişimdir.
+              Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
             </p>
-            <p className="mt-8 text-lg md:text-2xl text-gray-600 font-medium leading-relaxed">
-              Temel amacımız, atık plastikten elde edilen REYOWA panellerinin sadece teknik bir kaplama yüzeyi değil; güçlü bir estetik dil üreten, heykelimsi ve mimari bir materyal olarak ele alınmasıdır.
-            </p>
-            <div className="mt-8 text-lg md:text-xl font-medium leading-relaxed bg-reyowa-grey p-6 md:p-8 rounded-2xl relative overflow-hidden group">
-              <div className="speckled-bg absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
-              <span className="relative z-10">Amacımız klasik bir mağaza dekorasyonu üretmekten öte; malzeme, tasarım ve mekan arasında organik bir ilişki kurarak Oakberry Tersane lokasyonunu bir Sürdürülebilir Tasarım alanına dönüştürmektir.</span>
-            </div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Preface Section */}
-      <section className="h-screen flex flex-col justify-center px-6 md:px-24 bg-white relative z-20">
-        <motion.div
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, margin: "-100px" }}
-           variants={fadeInUp}
-           className="max-w-4xl"
-        >
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 text-reyowa-blue">
-            Merhaba!
-          </h2>
-          <p className="text-xl md:text-3xl font-semibold leading-relaxed text-black">
-            Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
-          </p>
-        </motion.div>
       </section>
 
       {/* Tersane Istanbul Section */}
