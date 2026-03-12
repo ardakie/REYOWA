@@ -453,9 +453,7 @@ export function App() {
                 <div className="absolute -left-20 -bottom-20 w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
                 
                 <div className="relative z-10 flex items-center justify-center min-h-[300px]">
-                  <p className="text-2xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter text-white leading-tight text-center">
-                    buraya oakberry açıyoz masa sandalyeyi buraya atcaz
-                  </p>
+                  {/* Text removed */}
                 </div>
                </div>
              </motion.div>
