@@ -72,9 +72,9 @@ export function App() {
           />
         </div>
         
-        {/* Animated Background blobs */}
-        <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-reyowa-blue/20 rounded-full blur-[100px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-reyowa-green/10 rounded-full blur-[100px] pointer-events-none"></div>
+        {/* Animated Background blobs - optimized without expensive blur filter */}
+        <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-[radial-gradient(circle,rgba(149,173,242,0.15)_0%,transparent_70%)] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-[radial-gradient(circle,rgba(34,80,60,0.1)_0%,transparent_70%)] rounded-full pointer-events-none"></div>
 
         <header className="flex justify-between items-start z-10 w-full relative">
           <div className="w-32 md:w-40">
@@ -158,9 +158,9 @@ export function App() {
           />
         </div>
         
-        {/* Decorative elements */}
+        {/* Decorative elements - optimized without expensive blur filter */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-black/10 transform skew-x-[-15deg] translate-x-20"></div>
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-reyowa-blue/30 rounded-full blur-[80px] -translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(149,173,242,0.2)_0%,transparent_70%)] -translate-y-1/2 -translate-x-1/2"></div>
         
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -291,7 +291,7 @@ export function App() {
       {/* 2. Tasarım Kriterlerimiz */}
       <section className="py-24 md:py-40 px-6 md:px-12 bg-reyowa-blue text-white relative z-20 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/612de85b86b2472e5c3dba2b.jpg.webp')] bg-cover bg-center opacity-20 mix-blend-overlay mix-blend-luminosity"></div>
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0%,transparent_70%)] -translate-y-1/2 translate-x-1/2"></div>
         <div className="max-w-5xl mx-auto relative z-10">
           <motion.div
             initial="hidden"
@@ -528,7 +528,7 @@ export function App() {
               className="bg-reyowa-blue text-white p-8 md:p-12 rounded-[2rem] relative overflow-hidden group flex flex-col justify-between"
             >
               {/* Giant abstract shapes */}
-              <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+              <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,transparent_70%)] rounded-full"></div>
               
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
@@ -658,29 +658,19 @@ export function App() {
             <div className="w-full max-w-[900px] mx-auto">
               <svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
                   <defs>
-                    <filter id="sk" x="-6%" y="-6%" width="112%" height="112%">
-                      <feTurbulence type="fractalNoise" baseFrequency="0.042" numOctaves="4" seed="5" result="n"/>
-                      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"
-                                        xChannelSelector="R" yChannelSelector="G"/>
-                    </filter>
-                    <filter id="sk-belt" x="-2%" y="-20%" width="104%" height="160%">
-                      <feTurbulence type="fractalNoise" baseFrequency="0.025 0.06" numOctaves="4" seed="11" result="n"/>
-                      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"
-                                        xChannelSelector="R" yChannelSelector="G"/>
-                    </filter>
                     <clipPath id="bclip"><rect x="0" y="162" width="900" height="30"/></clipPath>
                     <clipPath id="m1-inner"><rect x="200" y="52" width="136" height="137"/></clipPath>
                     <clipPath id="m2-inner"><rect x="554" y="52" width="136" height="137"/></clipPath>
                   </defs>
 
                   {/* Conveyor Belt */}
-                  <g filter="url(#sk-belt)">
+                  <g>
                     <rect x="6" y="165" width="888" height="22" rx="11"
                           fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2.8"/>
                   </g>
 
                   {/* Scrolling dashes */}
-                  <g id="belt-dashes" clipPath="url(#bclip)" filter="url(#sk)" className="animate-belt-scroll">
+                  <g id="belt-dashes" clipPath="url(#bclip)" className="animate-belt-scroll">
                     <line x1="-32" y1="176" x2="-16" y2="176" stroke="#888" strokeWidth="2.2" strokeLinecap="round"/>
                     <line x1="0"   y1="176" x2="16"  y2="176" stroke="#888" strokeWidth="2.2" strokeLinecap="round"/>
                     <line x1="32"  y1="176" x2="48"  y2="176" stroke="#888" strokeWidth="2.2" strokeLinecap="round"/>
@@ -714,10 +704,10 @@ export function App() {
                   </g>
 
                   {/* Belt shadow */}
-                  <ellipse cx="450" cy="190" rx="430" ry="5" fill="rgba(0,0,0,0.05)" filter="url(#sk)"/>
+                  <ellipse cx="450" cy="190" rx="430" ry="5" fill="rgba(0,0,0,0.05)"/>
 
                   {/* Cup */}
-                  <g id="cup" filter="url(#sk)" className="animate-cup-move">
+                  <g id="cup" className="animate-cup-move">
                     <rect x="-3" y="84" width="68" height="13" rx="6"
                           fill="#edede8" stroke="#111" strokeWidth="2.6"/>
                     <path d="M3,97 L8,165 L55,165 L60,97 Z"
@@ -747,7 +737,7 @@ export function App() {
                   </g>
 
                   {/* Granules */}
-                  <g id="granules" filter="url(#sk)" className="animate-gran-move">
+                  <g id="granules" className="animate-gran-move">
                     <ellipse cx="11"  cy="152" rx="8"   ry="5"   fill="#fafaf7" stroke="#111" strokeWidth="2.4" transform="rotate(-22,11,152)"/>
                     <ellipse cx="27"  cy="147" rx="9"   ry="5.5" fill="#fafaf7" stroke="#111" strokeWidth="2.4" transform="rotate(12,27,147)"/>
                     <ellipse cx="45"  cy="149" rx="8.5" ry="5.2" fill="#fafaf7" stroke="#111" strokeWidth="2.4" transform="rotate(-6,45,149)"/>
@@ -766,14 +756,14 @@ export function App() {
                   </g>
 
                   {/* Panel */}
-                  <g id="panel" filter="url(#sk)" className="animate-panel-move">
+                  <g id="panel" className="animate-panel-move">
                     <rect x="2" y="108" width="90" height="57" rx="4"
                           fill="#fafaf7" stroke="#111" strokeWidth="3"/>
                     <ellipse cx="14" cy="120" rx="6"   ry="3.8" fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(-14,14,120)"/>
                     <ellipse cx="30" cy="117" rx="7"   ry="4"   fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(18,30,117)"/>
                     <ellipse cx="47" cy="119" rx="6.5" ry="4"   fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(-5,47,119)"/>
                     <ellipse cx="63" cy="116" rx="7"   ry="4"   fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(22,63,116)"/>
-                    <ellipse cx="78" cy="120" rx="5.5" ry="3.8" fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(-10,78,120)"/>
+                    <ellipse cx="78" cy="120" rx="5.5" ry="3.8" fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(-10,78,150)"/>
                     <ellipse cx="14" cy="131" rx="6.5" ry="4"   fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(9,14,131)"/>
                     <ellipse cx="30" cy="129" rx="7"   ry="4.2" fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(-16,30,129)"/>
                     <ellipse cx="47" cy="131" rx="6"   ry="3.8" fill="#fafaf7" stroke="#222" strokeWidth="1.9" transform="rotate(5,47,131)"/>
@@ -797,7 +787,7 @@ export function App() {
                           fill="#f3f2ee" stroke="none"/>
                     <rect x="200" y="52" width="136" height="135" rx="5"
                           fill="none" stroke="#111" strokeWidth="3.2"
-                          filter="url(#sk)"/>
+                          />
                     <g clipPath="url(#m1-inner)" opacity="0.09">
                       <line x1="202" y1="52" x2="336" y2="186" stroke="#000" strokeWidth="4"/>
                       <line x1="218" y1="52" x2="336" y2="170" stroke="#000" strokeWidth="4"/>
@@ -811,11 +801,11 @@ export function App() {
                       <line x1="202" y1="158" x2="248" y2="204" stroke="#000" strokeWidth="4"/>
                     </g>
                     <line x1="204" y1="72" x2="332" y2="72"
-                          stroke="#444" strokeWidth="1.6" strokeDasharray="5 7" filter="url(#sk)"/>
-                    <circle cx="214" cy="63" r="5" fill="#4a4a4a" filter="url(#sk)"/>
-                    <circle cx="322" cy="63" r="5" fill="#4a4a4a" filter="url(#sk)"/>
+                          stroke="#444" strokeWidth="1.6" strokeDasharray="5 7" />
+                    <circle cx="214" cy="63" r="5" fill="#4a4a4a" />
+                    <circle cx="322" cy="63" r="5" fill="#4a4a4a" />
                     <path d="M222,52 Q228,41 234,52 Q240,41 246,52 Q252,41 258,52 Q264,41 270,52 Q276,41 282,52 Q288,41 294,52 Q300,41 306,52 Q312,41 318,52"
-                          fill="none" stroke="#1a1a1a" strokeWidth="2.4" filter="url(#sk)"/>
+                          fill="none" stroke="#1a1a1a" strokeWidth="2.4" />
                     <text x="268" y="130" textAnchor="middle"
                           fontFamily="'Courier New',monospace" fontSize="13"
                           fill="#383838" letterSpacing="2">M·01</text>
@@ -827,7 +817,7 @@ export function App() {
                           fill="#f3f2ee" stroke="none"/>
                     <rect x="554" y="52" width="136" height="135" rx="5"
                           fill="none" stroke="#111" strokeWidth="3.2"
-                          filter="url(#sk)"/>
+                          />
                     <g clipPath="url(#m2-inner)" opacity="0.09">
                       <line x1="556" y1="52" x2="690" y2="186" stroke="#000" strokeWidth="4"/>
                       <line x1="572" y1="52" x2="690" y2="170" stroke="#000" strokeWidth="4"/>
