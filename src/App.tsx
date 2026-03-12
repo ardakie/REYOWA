@@ -464,9 +464,6 @@ export function App() {
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
               Tasarım ve Koleksiyon Kurgusu
             </h2>
-            <p className="text-xl md:text-2xl font-medium text-gray-600">
-              Projeye davet edilen 5 tasarımcıdan biri olarak, geri dönüştürülmüş kompozit malzeme ile özel bir koleksiyonun parçasını oluşturacaksınız.
-            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -484,9 +481,6 @@ export function App() {
                   <Square className="w-8 h-8 text-reyowa-blue" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase">Üretim</h3>
-                <p className="text-lg text-gray-300 font-medium leading-relaxed">
-                  Projeye davet edilen 5 tasarımcıdan biri olarak, geri dönüştürülmüş kompozit malzeme ile özel bir koleksiyonun parçasını oluşturacaksınız.
-                </p>
               </div>
             </motion.div>
 
