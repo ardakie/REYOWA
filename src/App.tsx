@@ -125,26 +125,8 @@ export function App() {
         </motion.div>
       </section>
 
-      {/* Preface Section */}
-      <section className="h-screen snap-start flex flex-col justify-center px-6 md:px-24 bg-white relative z-20">
-        <motion.div
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, margin: "-100px" }}
-           variants={fadeInUp}
-           className="max-w-4xl"
-        >
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 text-reyowa-blue">
-            Merhaba!
-          </h2>
-          <p className="text-xl md:text-3xl font-semibold leading-relaxed text-black">
-            Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
-          </p>
-        </motion.div>
-      </section>
-
       {/* Intro Section */}
-      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+      <section className="snap-start py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4 flex items-start">
             <h2 className="text-sm md:text-base font-bold uppercase tracking-widest border-l-4 border-reyowa-blue pl-4">
@@ -170,6 +152,24 @@ export function App() {
             </div>
           </motion.div>
         </div>
+      </section>
+
+      {/* Preface Section */}
+      <section className="h-screen flex flex-col justify-center px-6 md:px-24 bg-white relative z-20">
+        <motion.div
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, margin: "-100px" }}
+           variants={fadeInUp}
+           className="max-w-4xl"
+        >
+          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 text-reyowa-blue">
+            Merhaba!
+          </h2>
+          <p className="text-xl md:text-3xl font-semibold leading-relaxed text-black">
+            Oakberry'nin Tersane İstanbul'daki yeni lokasyonu için klasik bir mağaza kurgusunun ötesine geçiyoruz. Reyowa’nın destekleriyle, geri dönüştürülmüş plastiğin sınırlarını zorlayacağımız, malzemenin, mekanın ve tasarımın organik bir bağ kuracağı bir sürdürülebilir tasarım alanı yaratıyoruz.
+          </p>
+        </motion.div>
       </section>
 
       {/* Tersane Istanbul Section */}
