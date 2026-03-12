@@ -468,7 +468,7 @@ export function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             
-            {/* Card 1: Kolektif Uyum */}
+            {/* Card 1: Küratöryel Uyum */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
@@ -482,12 +482,17 @@ export function App() {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <Users className="w-10 h-10 text-reyowa-green" />
-                  <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter">Kolektif Uyum</h3>
+                  <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter">Küratöryel Uyum</h3>
                 </div>
                 <div className="w-12 h-1.5 bg-white mb-6"></div>
-                <p className="text-lg md:text-xl font-medium leading-relaxed">
-                  Eserler birbirlerinden bağımsız sanatçıların elinden çıksa da, aynı mekanda yaşayacaklardır. Bu nedenle tasarımların doğrudan veya dolaylı <span className="font-bold text-reyowa-green opacity-90">(ortak bir renk paleti, birleşim detayı veya form dili üzerinden)</span> birbiriyle uyum içinde olması beklenmektedir.
-                </p>
+                <div className="space-y-4 text-lg md:text-xl font-medium leading-relaxed">
+                  <p>
+                    Ürünler farklı tasarımcılara ait olsa da aynı mekan içinde birlikte var olacaklardır. 
+                  </p>
+                  <p>
+                    Bu nedenle tasarımlar arasında renk paleti, form dili veya detaylar üzerinden bir uyum düşünülmesi faydalı olacaktır. Detaylar ilerleyen aşamada birlikte şekillendirilecektir.
+                  </p>
+                </div>
               </div>
             </motion.div>
 
