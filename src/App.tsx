@@ -271,7 +271,7 @@ export function App() {
             <motion.div variants={fadeInUp} className="flex gap-6 items-start bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
               <CheckCircle2 className="w-8 h-8 md:w-10 md:h-10 text-reyowa-green flex-shrink-0 mt-1" />
               <p className="text-xl md:text-2xl font-semibold leading-relaxed">
-                Malzemenin o "geri dönüştürülmüş" karakteristik dokusu saklanmamalı, aksine gururla sergilenmeli.
+                Malzemenin "geri dönüştürülmüş" karakteristik dokusu saklanmamalı, aksine gururla sergilenmeli.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex gap-6 items-start bg-black/20 p-8 rounded-2xl backdrop-blur-sm">
