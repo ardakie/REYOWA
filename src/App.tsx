@@ -510,7 +510,7 @@ export function App() {
                     Ana üretim malzememiz 100x100 cm standartlarında dökülebilen, geri dönüştürülmüş plastik panellerdir. Bu paneller CNC kesime ve işlemeye uygundur.
                   </p>
                   <p className="text-lg font-medium leading-relaxed bg-white/60 p-4 rounded-xl backdrop-blur-sm">
-                    Tasarımın ağırlıklı karakterini ve gövdesini bu paneller oluşturmalıdır. Ancak eserinizi güçlendirecek ahşap, metal, cam vb. gibi farklı yan materyalleri tasarıma entegre etmekte özgürsünüz.
+                    Tasarımın ağırlıklı karakterini ve gövdesini bu paneller oluşturmalıdır. Ancak eserinizi güçlendirecek ahşap, metal, cam vb. gibi farklı yan materyaller elbette tasarıma entegre edilebilir.
                   </p>
                 </div>
               </div>
