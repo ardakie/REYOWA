@@ -66,7 +66,7 @@ export function App() {
         {/* Hero Background Image */}
         <div className="absolute inset-0 opacity-[0.40]">
           <img 
-            src="/hero-background.jpg" 
+            src="/hero-background.webp" 
             alt="Hero Background" 
             className="w-full h-full object-cover"
           />
@@ -79,14 +79,14 @@ export function App() {
         <header className="flex justify-between items-start z-10 w-full relative">
           <div className="w-32 md:w-40">
             <img 
-               src="/logo.png" 
+               src="/logo.webp" 
                alt="REYOWA Logo" 
                className="w-full h-auto object-contain mix-blend-multiply"
              />
           </div>
           <div className="w-32 md:w-40">
             <img 
-               src="/oakberry-logo.png" 
+               src="/oakberry-logo.webp" 
                alt="Oakberry Logo" 
                className="w-full h-auto object-contain scale-[0.66] -mt-4 md:-mt-8"
              />
@@ -152,7 +152,7 @@ export function App() {
         {/* Background Image */}
         <div className="absolute inset-0 opacity-[0.40] blur-[15px]">
           <img 
-            src="/background-image.jpg" 
+            src="/background-image.webp" 
             alt="Background" 
             className="w-full h-full object-cover"
           />
@@ -215,7 +215,7 @@ export function App() {
               className="md:col-span-8 rounded-3xl overflow-hidden shadow-2xl group aspect-[16/9] md:aspect-auto md:h-[600px]"
             >
               <img 
-                src="/tersane-1.jpg" 
+                src="/tersane-1.webp" 
                 alt="Tersane Görsel" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
               />
@@ -229,7 +229,7 @@ export function App() {
                 className="rounded-3xl overflow-hidden shadow-xl group flex-1 md:h-1/2"
               >
                 <img 
-                  src="/unnamed.png" 
+                  src="/unnamed.webp" 
                   alt="Tersane Detay" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -390,7 +390,7 @@ export function App() {
             className="bg-reyowa-green text-white p-10 md:p-16 rounded-[2rem] relative mt-10"
           >
             <Sparkles className="absolute -top-12 -left-12 w-32 h-32 text-reyowa-blue -rotate-12 z-20 drop-shadow-[0_0_15px_rgba(40,116,252,0.4)]" />
-            <div className="absolute inset-0 bg-[url('/background-image.jpg')] opacity-20 mix-blend-overlay object-cover rounded-[2rem] overflow-hidden"></div>
+            <div className="absolute inset-0 bg-[url('/background-image.webp')] opacity-20 mix-blend-overlay object-cover rounded-[2rem] overflow-hidden"></div>
             <p className="relative z-10 text-xl md:text-2xl font-medium leading-relaxed">
               Tersane İstanbul’un kültür ve sanat odaklı gelişimi, projeye dahil olan tasarımcı ve sanatçılar için güçlü bir görünürlük potansiyeli sunacaktır. Bölgede markaların tasarımı merkezine alan amiral mağazalarının bulunması ve Contemporary Istanbul, Türkiye'nin ilk özel müzesi olan Sadberk Hanım Müzesi'nin yeni sergi mekanının açılacak olması gibi uluslararası etkinliklerin düzenlenmesi, tasarımcıların üretimlerinin daha geniş bir kitleye ulaşmasını sağlayacaktır. Oakberry mağazasının Tersane içindeki en görünür alanlardan birinde konumlanması ise bu etkiyi daha da güçlendirecek ve projede yer alan tasarımcıların görünürlüğünü artıracaktır.
             </p>
@@ -469,7 +469,7 @@ export function App() {
               className="rounded-3xl overflow-hidden shadow-2xl group w-full aspect-[4/5]"
             >
               <img 
-                src="/tersane-main.jpg" 
+                src="/tersane-main.webp" 
                 alt="Tersane Ana Görsel" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -485,14 +485,14 @@ export function App() {
             >
               <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group aspect-square">
                 <img 
-                  src="/tersane-secondary1.jpg" 
+                  src="/tersane-secondary1.webp" 
                   alt="Tersane Görsel 1" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </motion.div>
               <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group aspect-square">
                 <img 
-                  src="/tersane-secondary2.png" 
+                  src="/tersane-secondary2.webp" 
                   alt="Tersane Görsel 2" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -599,9 +599,9 @@ export function App() {
             
             <div ref={colorScrollContainerRef} className="flex gap-4 overflow-x-auto md:overflow-visible md:flex-nowrap scroll-smooth pb-4 px-0 md:px-0 hide-scrollbar snap-x md:snap-none snap-mandatory">
               {[
-                { src: '/assets/color1.jpg', name: 'Gri' },
-                { src: '/assets/color2.jpg', name: 'Kahve' },
-                { src: '/assets/color3.jpg', name: 'Yeşil' }
+                { src: '/assets/color1.webp', name: 'Gri' },
+                { src: '/assets/color2.webp', name: 'Kahve' },
+                { src: '/assets/color3.webp', name: 'Yeşil' }
               ].map((color, i) => (
                 <div key={i} className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] snap-center">
                   <div className="aspect-[16/9] md:aspect-[3/2] rounded-2xl overflow-hidden shadow-lg">
@@ -870,10 +870,10 @@ export function App() {
               {Array.from({ length: 15 }).map((_, i) => (
                 <div key={i} className="flex-shrink-0 w-72 md:w-96 aspect-square rounded-2xl overflow-hidden group relative">
                   <img 
-                    src={`/assets/image${i + 1}.jpg`} 
+                    src={`/assets/image${i + 1}.webp`} 
                     alt={`Örnek Çalışma ${i + 1}`} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
-                    onClick={() => setSelectedImage(`/assets/image${i + 1}.jpg`)}
+                    onClick={() => setSelectedImage(`/assets/image${i + 1}.webp`)}
                   />
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <span className="text-white text-5xl md:text-7xl font-black opacity-50 rotate-[-30deg] select-none">ÖRNEK</span>
@@ -925,7 +925,7 @@ export function App() {
         <div className="max-w-7xl mx-auto flex flex-row justify-between items-center gap-4 md:gap-12 mb-6 md:mb-10">
           <div className="w-20 md:w-32 flex-shrink-0">
             <img 
-               src="/logo.png" 
+               src="/logo.webp" 
                alt="REYOWA Logo" 
                className="w-full h-auto brightness-125 saturate-150 scale-[0.77] origin-left"
              />
@@ -950,7 +950,7 @@ export function App() {
           </div>
           <div className="w-20 md:w-32 flex-shrink-0">
             <img 
-               src="/atersist.png" 
+               src="/atersist.webp" 
                alt="Tersane İstanbul" 
                className="w-full h-auto scale-[0.77] origin-right"
              />
@@ -960,7 +960,7 @@ export function App() {
         <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 flex items-center gap-2">
           <span className="text-[12px] font-light tracking-wider opacity-60">Powered by</span>
           <img 
-            src="/weiss-logo.png" 
+            src="/weiss-logo.webp" 
             alt="WEISS" 
             className="h-[12px] w-auto opacity-[0.70] -translate-y-0.5"
           />
