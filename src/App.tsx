@@ -144,7 +144,7 @@ export function App() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20">
+      <section className="py-24 md:py-40 px-6 md:px-12 bg-white relative z-20 snap-start">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-4 flex items-start">
             <h2 className="text-sm md:text-base font-bold uppercase tracking-widest border-l-4 border-reyowa-blue pl-4">
@@ -464,7 +464,7 @@ export function App() {
       </section>
 
       {/* Plastikten Panele Dönüşüm Section */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-white relative z-20">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white relative z-20 snap-start">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -681,7 +681,7 @@ export function App() {
       </section>
 
       {/* Örnek Çalışmalar Section */}
-      <section className="py-16 md:py-24 px-6 md:px-12 bg-white relative z-20">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white relative z-20 snap-start">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
