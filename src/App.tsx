@@ -108,7 +108,7 @@ export function App() {
             <div className="overflow-hidden flex items-center gap-4 md:gap-8 mt-2 md:mt-4">
               <motion.div variants={textReveal} className="h-2 w-16 md:w-32 bg-reyowa-blue"></motion.div>
               <motion.h1 variants={textReveal} className="text-[5.5vw] md:text-[3.5vw] font-bold leading-none tracking-tight uppercase text-reyowa-green">
-                Tersane Koleksiyonu
+                Tasarımcı Daveti & Brief
               </motion.h1>
             </div>
           </motion.div>
