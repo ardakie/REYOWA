@@ -171,7 +171,7 @@ export function App() {
           >
             <div className="inline-flex items-center gap-3 bg-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
               <Factory className="w-5 h-5 text-reyowa-blue" />
-              <span className="uppercase text-sm font-bold tracking-wider">Neden Tersane?</span>
+              <span className="uppercase text-sm font-bold tracking-wider">LOKASYON</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase tracking-tighter leading-none">
               Tersane <br/>
