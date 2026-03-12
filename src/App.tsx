@@ -212,9 +212,12 @@ export function App() {
             variants={staggerContainer}
             className="flex flex-col gap-8 text-lg md:text-2xl font-medium leading-relaxed"
           >
-            <motion.p variants={fadeInUp}>
-              Tersane İstanbul, yüzyıllar boyunca ahşabın ve demirin işlendiği, gemilere hayat veren bir üretim merkezi oldu. Bugün ise Contemporary İstanbul gibi etkinliklerin yer aldığı, kentin sanat ve tasarım kalbi olma yolunda dünya standartlarında bir komplekse dönüşüyor.
-            </motion.p>
+            <motion.div variants={fadeInUp}>
+              <h3 className="text-2xl md:text-4xl font-black mb-4 uppercase tracking-tighter">Neden Tersane?</h3>
+              <p>
+                Tersane İstanbul, yüzyıllar boyunca ahşabın ve demirin işlendiği, gemilere hayat veren bir üretim merkezi oldu. Bugün ise Contemporary İstanbul gibi etkinliklerin yer aldığı, kentin sanat ve tasarım kalbi olma yolunda dünya standartlarında bir komplekse dönüşüyor.
+              </p>
+            </motion.div>
             <motion.div variants={fadeInUp} className="bg-white text-black p-8 rounded-xl mt-4 shadow-2xl relative overflow-hidden">
               <div className="speckled-bg absolute inset-0 opacity-30"></div>
               <p className="relative z-10 text-lg md:text-xl leading-relaxed">
