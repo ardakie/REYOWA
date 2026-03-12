@@ -408,55 +408,45 @@ export function App() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="space-y-6"
-            >
-              <motion.div variants={fadeInUp} className="rounded-3xl overflow-hidden shadow-2xl group">
-                <img 
-                  src="/tersane-main.jpg" 
-                  alt="Tersane Ana Görsel" 
-                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-              </motion.div>
-              <div className="grid grid-cols-2 gap-6">
-                <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group">
-                  <img 
-                    src="/tersane-secondary1.jpg" 
-                    alt="Tersane Görsel 1" 
-                    className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </motion.div>
-                <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group">
-                  <img 
-                    src="/tersane-secondary2.png" 
-                    alt="Tersane Görsel 2" 
-                    className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </motion.div>
-              </div>
-            </motion.div>
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
+            {/* Left side: Main Image */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="relative"
+              className="rounded-3xl overflow-hidden shadow-2xl group h-full"
             >
-               <div className="bg-gradient-to-br from-reyowa-green to-reyowa-blue p-10 md:p-14 rounded-3xl relative overflow-hidden">
-                <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
-                <div className="absolute -left-20 -bottom-20 w-48 h-48 bg-black/10 rounded-full blur-2xl"></div>
-                
-                <div className="relative z-10 flex items-center justify-center min-h-[300px]">
-                  {/* Text removed */}
-                </div>
-               </div>
-             </motion.div>
+              <img 
+                src="/tersane-main.jpg" 
+                alt="Tersane Ana Görsel" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </motion.div>
+
+            {/* Right side: Two Secondary Images in a column */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 lg:gap-8 h-full"
+            >
+              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group h-full">
+                <img 
+                  src="/tersane-secondary1.jpg" 
+                  alt="Tersane Görsel 1" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 aspect-[16/9] lg:aspect-auto"
+                />
+              </motion.div>
+              <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl group h-full">
+                <img 
+                  src="/tersane-secondary2.png" 
+                  alt="Tersane Görsel 2" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 aspect-[16/9] lg:aspect-auto"
+                />
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
