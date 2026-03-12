@@ -371,7 +371,7 @@ export function App() {
               { month: "Mart", event: "Konsept ve Eskiz Önerilerinin Paylaşılması" },
               { month: "Nisan", event: "Tasarımın Geliştirilmesi ve Prototip" },
               { month: "Mayıs", event: "Üretim Süreci" },
-              { month: "Mayıs Sonu", event: "Tersane İstanbul'da Kurulum ve Açılış" },
+              { month: "Mayıs Ortası", event: "Tersane İstanbul'da Kurulum ve Açılış" },
             ].map((item, index) => (
               <motion.div 
                 key={index}
